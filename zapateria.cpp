@@ -38,6 +38,50 @@ struct productos
     int stock;
 };
 
+void crearinventario()
+{
+
+}
+
+void mostrarstock()
+{
+
+}
+
+void buscarproducto()
+{
+
+}
+
+void modificardatos()
+{
+
+}
+
+void reabastecimiento()
+{
+
+}
+
+void nuevosproductos()
+{
+
+}
+
+void registrocompras()
+{
+
+}
+
+void historialventas()
+{
+
+}
+
+void datosempresa()
+{
+    
+}
 
 
 int main ()
