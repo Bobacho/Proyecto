@@ -117,5 +117,5 @@ void datosempresa()
 
 int main ()
 {
-
+    int op;
 }
