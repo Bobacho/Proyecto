@@ -16,9 +16,20 @@ int menu()
     return opc;
 }
 
+struct tarjetasdecredito
+{
+    string nombre;
+    int cantidad;
+}
+
 struct clientes
 {
-    
+    int numero;
+    string nombre;
+    string apellido;
+    string opinion;
+    productos *comprados;
+    tarjetasdecredito *tarjeta;
 };
 struct productos
 {
