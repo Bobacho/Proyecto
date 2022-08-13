@@ -33,7 +33,9 @@ struct clientes
 };
 struct productos
 {
-
+    string nombre;
+    float precio;
+    int stock;
 };
 
 
