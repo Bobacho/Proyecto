@@ -16,6 +16,35 @@ int menu()
     return opc;
 }
 
+int submenu1()
+{
+    int opc;
+    do{
+    cout << "1. Crear Inventario"<< endl;
+    cout << "2. Mostrar stock de productos"<< endl;
+    cout << "3. Buscar producto"<< endl;
+    cout << "4. Modificar datos de un producto"<< endl;
+    cout << "5. Reabastecimiento de un producto"<< endl;
+    cout << "6. Incorporar nuevos productos"<< endl;
+    cout << "7. Salir"<< endl;
+    cout << "Ingrese una opcion:";cin >> opc;
+    }
+    while(opc<1 or opc>7);
+    return opc;
+}
+
+int submenu2()
+{
+    int opc;
+    do{
+    cout << "1. Registrar una compra"<< endl;
+    cout << "2. Historial de ventas"<< endl;
+    cout << "3. Salir"<< endl;
+    cout << "Ingrese una opcion:";cin >> opc;
+    }
+    while(opc<1 or opc>3);
+    return opc;
+}
 struct tarjetasdecredito
 {
     string nombre;
@@ -80,7 +109,7 @@ void historialventas()
 
 void datosempresa()
 {
-    
+
 }
 
 
