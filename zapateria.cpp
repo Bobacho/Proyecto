@@ -45,12 +45,18 @@ int submenu2()
     while(opc<1 or opc>3);
     return opc;
 }
+
+struct productos
+{
+    string nombre;
+    float precio;
+    int stock;
+};
 struct tarjetasdecredito
 {
     string nombre;
     int cantidad;
-}
-
+};
 struct clientes
 {
     int numero;
@@ -60,12 +66,8 @@ struct clientes
     productos *comprados;
     tarjetasdecredito *tarjeta;
 };
-struct productos
-{
-    string nombre;
-    float precio;
-    int stock;
-};
+
+
 
 void crearinventario()
 {
