@@ -115,7 +115,7 @@ void buscarproducto(producto *producto, int size, string buscar)
 
 void modificardatos()
 {
-
+    
 }
 
 void reabastecimiento()
