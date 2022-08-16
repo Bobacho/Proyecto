@@ -113,9 +113,29 @@ void buscarproducto(producto *producto, int size, string buscar)
     }
 }
 
-void modificardatos()
+int modificardatosmenu()
 {
-    
+    int opc;
+    do
+    {
+    cout << "1. Nombre"<< endl;
+    cout << "2. Stock"<< endl;
+    cout << "3. Precio"<< endl;
+    cout << "4. Regresar"        
+    }while(opc<1 or opc>4);
+    return opc;
+}
+
+void modificardatos(productos *producto, int size,string buscar)
+{
+    char opc;
+    for(int i=0; i<size; i++)
+    {
+        if((producto+i)->nombre==buscar)
+        {
+            cout << "Que desea cambiar del producto?"
+        }
+    }
 }
 
 void reabastecimiento()
