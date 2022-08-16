@@ -154,9 +154,17 @@ void modificardatos(productos *producto, int size,string buscar)
     }
 }
 
-void reabastecimiento()
+void reabastecimiento(productos *producto, int size,string buscar)
 {
-
+    int reabastecer;
+    for(int i=0; i<size; i++)
+    {
+        if((producto+i)->nombre==buscar)
+        {
+            cout << "Ingrese la cantidad a reabastecer:";cin>>reabastecer;
+            (producto+i)->stock+=reabastecer;
+        }
+    }
 }
 
 void nuevosproductos()
