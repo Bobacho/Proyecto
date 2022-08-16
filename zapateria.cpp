@@ -87,6 +87,7 @@ void crearinventario(productos *producto)
     {
         cout << "Ingrese una opcion valida"<< endl;
     }
+    l++;
     }while(confirmar!='N' or confirmar!='n');
 
 }
