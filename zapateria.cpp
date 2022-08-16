@@ -69,7 +69,7 @@ struct clientes
 
 
 
-void crearinventario(productos *producto)
+int crearinventario(productos *producto)
 {
     int l=1;
     char confirmar;
@@ -89,17 +89,28 @@ void crearinventario(productos *producto)
     }
     l++;
     }while(confirmar!='N' or confirmar!='n');
-
+    return l;
 }
 
-void mostrarstock()
+void mostrarstock(productos *producto, int size)
 {
-
+    for(int i=0; i<size; i++)
+    {
+        cout << "El producto "<< (producto+i)->nombre<<" tiene un stock de "<< (producto+i)->stock<<endl;
+    }
 }
 
-void buscarproducto()
+void buscarproducto(producto *producto, int size, string buscar)
 {
-
+    for(int i=0; i<size; i++)
+    {
+        if((producto+i)->nombre==buscar)
+        {
+            cout << "El producto "<< (producto+i)->nombre<< endl;
+            cout << "Tiene un stock de: "<< (producto+i)->stock<< endl;
+            cout << "Y su precio es de: "<< (producto+i)->precio<< endl;
+        }
+    }
 }
 
 void modificardatos()
