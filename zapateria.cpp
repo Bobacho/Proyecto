@@ -133,7 +133,23 @@ void modificardatos(productos *producto, int size,string buscar)
     {
         if((producto+i)->nombre==buscar)
         {
-            cout << "Que desea cambiar del producto?"
+            cout << "Que desea cambiar del producto?";
+            int opc;
+            opc=modificardatosmenu();
+            do{
+            switch(opc)
+            {
+                case 1:
+                cout << "Ingrese el nuevo nombre a cambiar";cin>>(producto+i->nombre);cout << endl;
+                break;
+                case 2:
+                cout << "Ingrese el nuevo stock a cambiar";cin>>(producto+i->stock);cout << endl;
+                break;
+                case 3:
+                cout << "Ingrese el nuevo precio a cambiar";cin>>(producto+i)->precio;cout << endl;
+                break;
+            }
+            }while(opc!=4);
         }
     }
 }
