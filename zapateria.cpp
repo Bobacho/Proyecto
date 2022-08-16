@@ -69,8 +69,25 @@ struct clientes
 
 
 
-void crearinventario()
+void crearinventario(productos *producto)
 {
+    int l=1;
+    char confirmar;
+    do
+    {
+    producto=new productos[l];
+    cout << "Quiere ingresar un nuevo producto?(S=si , N=no) [";cin>> confirmar;cout << "]"<<endl;
+    if(confirmar=='S' or confirmar=='s')
+    {
+        cout << "Ingrese el nombre del producto:";cin>> (producto+(l-1))->nombre;cout << endl;
+        cout << "Ingrese el precio del producto:";cin>> (producto+(l-1))->precio;cout << endl;
+        cout << "Ingrese la cantidad del producto:";cin>> (producto+(l-1))->stock;cout << endl;
+    }
+    else if(confirmar!='N' or confirmar!='n')
+    {
+        cout << "Ingrese una opcion valida"<< endl;
+    }
+    }while(confirmar!='N' or confirmar!='n');
 
 }
 
@@ -118,4 +135,7 @@ void datosempresa()
 int main ()
 {
     int op;
+    clientes *clientes;
+    productos *productos;
+    
 }
